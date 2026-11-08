@@ -1,0 +1,85 @@
+<!-- <p>site is ai for temp (fully lol), it's just for release. or is it good? should i keep this?</p> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rosemary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --bg: #070707;
+    --text: #e8e8ea;
+    --rose: #d9837f;
+    --blurple: #5865f2;
+    --green: #2fa36b;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+  main { width: 100%; max-width: 560px; text-align: center; }
+  h1 { margin: 0 0 6px; font-size: 44px; font-weight: 700; letter-spacing: -0.02em; color: var(--text); }
+  .logo { display: block; width: 125px; height: 125px; object-fit: contain; margin: 0 auto 18px; }
+  .sub { margin: 0 0 28px; color: #7b7b82; font-size: 16px; font-weight: 500; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .btn {
+    --c: var(--rose);
+    flex: 1 1 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border-radius: 8px;
+    background: var(--c);
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: filter .15s, transform .15s;
+  }
+  .btn:hover { filter: brightness(1.12); }
+  .btn:active { transform: scale(.98); }
+  .btn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  .discord { --c: var(--blurple); }
+  .docs { --c: var(--green); }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="rosemary.png" alt="Rosemary logo">
+    <h1>Rosemary</h1>
+    <p class="sub">a roblox executor</p>
+    <div class="actions">
+      <a class="btn download" href="https://download.com" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download
+      </a>
+      <a class="btn discord" href="https://discord.gg/KEH3BREd9T" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M19.5 5.3A16.5 16.5 0 0 0 15.4 4l-.5 1a15 15 0 0 0-5.8 0l-.5-1a16.5 16.5 0 0 0-4.1 1.3C1.8 9.2 1.1 13 1.4 16.7a16.6 16.6 0 0 0 5 2.5l1.1-1.7a10.8 10.8 0 0 1-1.7-.8l.4-.3a11.8 11.8 0 0 0 10.2 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.7a16.6 16.6 0 0 0 5-2.5c.4-4.3-.7-8-2.6-11.4ZM8.7 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+        Discord
+      </a>
+      <a class="btn docs" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+        Docs
+      </a>
+    </div>
+  </main>
+</body>
+</html>
