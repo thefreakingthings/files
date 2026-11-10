@@ -1,10 +1,11 @@
 {
   "UIversion": "0.1",
   "RosemaryVersion": "v1.0.0-espresso-b",
-  "luau": "0.746",
-  "roblox_version": "version-f0ea5da9412f4e35",
+  "luau": "0.747",
+  "roblox_version": "version-4ea8e85481e34f46",
   "changelogs": [
-    "released",
-    "don't use raknet"
+    "updated to live roblox version",
+    "fixed cache.invalidate",
+    "updated UI to show update status (not forced)",
   ]
 }
